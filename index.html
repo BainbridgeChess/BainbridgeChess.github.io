@@ -1,13 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Meta -->
     <meta charset="utf-8">
     <title>Bainbridge Chess</title>
     <meta content="Bainbridge Chess" name="author">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta name="description" content={% if page.description %}{{ page.description }}{% else %}{{ site.data.global.description }}{% endif %}>
+    <meta content="Supporting the educational benefits of chess and the Bainbridge Island community." name="description">
+    <meta content="https://bainbridgechess.org/img/icon-v1.png" property="og:image">
+    <meta content="Bainbridge Chess" property="og:title">
+    <meta content= "Supporting the educational benefits of chess and the Bainbridge Island community." property="og:description">
+    <meta name="viewport" content="width=320, initial-scale=0.8">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123801071-2"></script>
@@ -19,33 +20,14 @@
       gtag('config', 'UA-123801071-2');
     </script>
 
-    <!-- Open Graph Protocol (Social Media) -->
-    <meta property="og:url" content="{{page.url | prepend: site.url}}" />
-    <meta property="og:type"   content="article" />
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.data.global.title }}{% endif %}" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content={{ site.data.global.site-name }} />
-    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.data.global.description }}{% endif %}"/>
-    <meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.url }}{% else %}'https://theshapeofcollege.com/img/icon/shape-of-icon.png'{% endif %}" />
-    {% if page.image %}<meta property="og:image:width" content="1667"/>{% endif %}
-    {% if page.image %}<meta property="og:image:height" content="1000"/>{% endif %}
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/img/icon/shape-of-icon.png">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
     <link href="css/grayscale.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
-    <!-- Libraries -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js">
@@ -56,9 +38,8 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js">
     </script>
-    <script src="js/faq-dropdown.js"></script>
 
-    <link href="img/logo/empa-favicon-2.png" rel="shortcut icon" type="image/png">
+    <link href="img/icon-v1.png" rel="shortcut icon" type="image/png">
 
 </head>
 <body>
@@ -70,7 +51,7 @@
                   <span class="navbar-icon">menu</span>
                   <i class="fa fa-bars"></i></button>
                   <a class="navbar-brand page-scroll" href="#page-top">
-                    <img class="empa-logo-nav" src="/img/logo/empa-icon-salmon.png">
+                    <img class="empa-logo-nav" src="/img/bainbridge-chess-fade-v2.png">
                   </a>
             </div><!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -80,141 +61,144 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#how-it-works">Programs</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#who-we-are">About</a>
+                        <a class="page-scroll" style="margin-top:-3px;" href="#about">About</a>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav>
-
-<header class="salmon-bg">
+    <!-- Intro Header -->
+    <header class="salmon-bg">
         <div class="body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-md-offset">
-                        <img class="empa-logo" src="/img/logo/empa-logo-v3.png"><br>
-                        <!--                         <span class="intro-phone title-text">
-                            <a class="page-scroll intro-phone" href="#find-hotline">Find A Hotline</a>
-                            <br>
-                        </span> -->
-                        <h2 class="landing-sub">Supportive conversations start here: <a href="tel: 6193632623" target="_blank" style="text-decoration: none;">619-363-2623</a>.</h2>
-                        <!--<br>
-                        <h2 class="landing-phone">619-363-2623.</h2>-->
-                        <!--<br>
-                        <a class="btn btn-default page-scroll btnondark" href="#find-hotline" role="button">Find your hotline</a>
-                      -->
-                    </div>
+                    <div class="col-md-12">
+                      <div class="row guide-row">
+                          <div class="col-md-6">
+                              <div class="guide-item">
+                                <p style="font-weight:bold;" class="mobile-p">Beginner Workshop 1<span class="button-spacer"/> <a class="btn btn-default page-scroll btnondark" href="#find-hotline" role="button">&rightarrow; Sign Up</a></p>
+                                <div class="guide-description">
+                                  For those with zero prior chess experience.<br><br>
+                                  Students will learn the basics of chess in a fun and engaging setting. Covered concepts include piece movement, capturing, castling, en passant, stalemate, board setup, coordinates and chess notation, basic checkmates, chess etiquette, and sportsmanship.<br><br>
+                                  As participants master each concept, they will earn their very own tournament chess set to take home!<br><br>
+                                  Workshop meets once per week at Bainbridge Independent. Choice of Mon 4-5p, Tues 9-10a, etc. 8 weeks total: first week 9/10, final week 9/10, no class on 8/2/3/4.<br><br>
+                                  Cost is $195 per participant. Class size capped at 10 seats. Seat is reserved upon $45 deposit with signup.
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="guide-item">
+                                <p class="mobile-p"  style="font-weight:bold;">Beginner Workshop 2 <span class="button-spacer"/> <a class="btn btn-default page-scroll btnondark" href="#find-hotline" role="button">&rightarrow; Sign Up</a></p>
+                                <div class="guide-description">
+                                  For those with experience playing family and friends.<br><br>
+                                  Students will learn the basics of chess in a fun and engaging setting. Covered concepts include piece movement, capturing, castling, en passant, stalemate, board setup, coordinates and chess notation, basic checkmates, chess etiquette, and sportsmanship.<br><br>
+                                  As participants master each concept, they will earn their very own tournament chess set to take home!<br><br>
+                                  Workshop meets once per week at Bainbridge Independent. Choice of Mon 4-5p, Tues 9-10a, etc. 8 weeks total: first week 9/10, final week 9/10, no class on 8/2/3/4.<br><br>
+                                  Cost is $195 per participant. Class size capped at 10 seats. Seat is reserved upon $45 deposit with signup.
+                                    </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="guide-item">
+                                <p class="mobile-p"  style="font-weight:bold;">Intermediate Workshop 1 <span class="button-spacer"/> <a class="btn btn-default page-scroll btnondark" href="#find-hotline" role="button">&rightarrow; Sign Up</a></p>
+                                <div class="guide-description">
+                                  For those with tournament experience rated 400-800, or who have completed a Beginner Workshop. <br><br>
+                                  Students will learn the basics of chess in a fun and engaging setting. Covered concepts include piece movement, capturing, castling, en passant, stalemate, board setup, coordinates and chess notation, basic checkmates, chess etiquette, and sportsmanship.<br><br>
+                                  As participants master each concept, they will earn their very own tournament chess set to take home!<br><br>
+                                  Workshop meets once per week at Bainbridge Independent. Choice of Mon 4-5p, Tues 9-10a, etc. 8 weeks total: first week 9/10, final week 9/10, no class on 8/2/3/4.<br><br>
+                                  Cost is $195 per participant. Class size capped at 10 seats. Seat is reserved upon $45 deposit with signup.
+                                    </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="guide-item">
+                                <p class="mobile-p"  style="font-weight:bold;">Intermediate Workshop 2 <span class="button-spacer"/> <a class="btn btn-default page-scroll btnondark" href="#find-hotline" role="button">&rightarrow; Sign Up</a></p>
+                                <div class="guide-description">
+                                  For those with tournament experience rated 800-1100. <br><br>
+                                  Students will learn the basics of chess in a fun and engaging setting. Covered concepts include piece movement, capturing, castling, en passant, stalemate, board setup, coordinates and chess notation, basic checkmates, chess etiquette, and sportsmanship.<br><br>
+                                  As participants master each concept, they will earn their very own tournament chess set to take home!<br><br>
+                                  Workshop meets once per week at Bainbridge Independent. Choice of Mon 4-5p, Tues 9-10a, etc. 8 weeks total: first week 9/10, final week 9/10, no class on 8/2/3/4.<br><br>
+                                  Cost is $195 per participant. Class size capped at 10 seats. Seat is reserved upon $45 deposit with signup.
+                                    </div>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <div class="guide-item">
+                                <p class="mobile-p"  style="font-weight:bold;">Advanced Workshop 1 <span class="button-spacer"/> <a class="btn btn-default page-scroll btnondark" href="#find-hotline" role="button">&rightarrow; Sign Up</a></p>
+                                <div class="guide-description">
+                                  For those rated 1100-1400, or who have completed Intermediate Workshop 2. <br><br>
+                                  Students will learn the basics of chess in a fun and engaging setting. Covered concepts include piece movement, capturing, castling, en passant, stalemate, board setup, coordinates and chess notation, basic checkmates, chess etiquette, and sportsmanship.<br><br>
+                                  As participants master each concept, they will earn their very own tournament chess set to take home!<br><br>
+                                  Workshop meets once per week at Bainbridge Independent. Choice of Mon 4-5p, Tues 9-10a, etc. 8 weeks total: first week 9/10, final week 9/10, no class on 8/2/3/4.<br><br>
+                                  Cost is $195 per participant. Class size capped at 10 seats. Seat is reserved upon $45 deposit with signup.
+                                    </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
     </header>
 
-    {% include sidebar.html %}
-
-    <section class="white-bg container content-section text-center" id="how-it-works">
+    <!-- How It Works -->
+    <section class="white-bg container content-section text-center" id="about">
         <div class="about-body">
             <div class="container">
-              <div class="col-md-12">
-                  <span class="guide-span title-text">How Empatext Works</span>
-              </div>
-              <div class="row guide-row">
-                  <div class="col-md-4">
-                      <div class="guide-item">
-                        <div class="guide-header">
-                          <img class="guide-header-pic" src="/img/how-it-works/step1.png">
-                        </div>
-                        <div class="guide-description">
-                            Send us a text message. It could be a simple “hello” or a more involved introduction, whatever you feel comfortable sharing. We'll respond with a couple quick prompts&mdash;legal agreement and $25 payment&mdash;then get you matched ASAP with your Empatexter. <br><br>If you have questions before getting started, please ask away! We really want to be super transparent and up-front with you.
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="guide-item">
-                        <div class="guide-header">
-                          <img class="guide-header-pic" src="/img/how-it-works/step2-talk.png">
-                        </div>
-                        <div class="guide-description">
-                            Your Empatexter will really <i>listen</i>, staying present with you throughout the week and guiding the conversation in a way that's right for you. During your conversation, there are no time nor content limits.<br><br>Empatexters are amazing humans trained to support you with the world's most meaningful, convenient, and empowering conversations. However, please note that they are not licensed therapists or otherwise certified.
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="guide-item">
-                        <div class="guide-header">
-                          <img class="guide-header-pic" src="/img/how-it-works/step3-debrief.png">
-                        </div>
-                        <div class="guide-description">
-                            After a full week, the conversation will end. Don't worry, you'll receive a code in case you want the same Empatexter next time! We will ask a few questions to get your feedback on our service, then you will rate your overall satisfaction from 1 to 5 stars.<br><br>We really care about your experience, so for every star below five, we will refund you $5. For example, if you give us a 1 star rating, we will give you $20 back.
-                        </div>
-                      </div>
-                  </div>
-
-              </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="salmon-bg container content-section text-center" id="who-we-are">
-        <div class="about-body">
-            <div class="container">
-              <div class="col-md-12">
-                  <span class="guide-span title-text">Who We Are</span>
-              </div>
               <div class="row guide-row">
                   <div class="col-md-4">
                       <div class="guide-item">
                         <p style="font-weight:bold;" class="mobile-p">Our Philosophy</p>
                         <div class="guide-description">
-                          Language is a technology, just like a cell phone or a car. It helps us communicate with each other and travel through society. It is also the paintbrush through which we express our mental and emotional landscapes to ourselves. <br><br>
-                          We go to the mechanic when our bike starts making funny noises. We find a trainer or join a gym when we want to enhance the performance of our body. But to whom do we turn when we want to tune-up our attitude or blow off steam, when we run out of motivation gas, or when we need a spare smile? <br><br>
-                          Some people find their friends, families, or partners helpful. Some people turn to professionals, like therapists or spiritual leaders. Some people take to the forums or social media. It might be the scheduling logistics, or the fear of judgment, or the lack of trust, or the certainty that the other person won't truly understand...for many, the existing options just don't quite fit every situation. <br><br>
-                          We know that text message conversations aren't everyone's cup of tea, so we might not fit either, and that's OK. In general, being vulnerable is very hard. And $25 is a lot to ask for something as simple as a conversation. We wish that we could provide our service for free, all the time, in a million different formats, to everyone, everywhere, but unfortunately we haven't yet figured out how to do that in a sustainable, high-quality way.
-                          <br><br>For now, we just want to bring our option to the table: real, genuine, convenient, and truly helpful Empatext dialogue. We want to provide you with emotional breathing room, a space where you can share your mental landscape paintings. We believe that words are so, so powerful; they can paint a thousand pictures. And we believe that your words matter. We hear you, we value you, and we want to paint with you.
+                          Chess has remarkable benefits.
+
+                          We believe self-confidence and motivation.
+
+                          Chess is a skill that anyone can develop.
+
+                          Vehicle for sportsmanship. Life lessons.
+
+                          We want to fail. Safe place to fail. So many times
+
                         </div>
                       </div>
                   </div>
                   <div class="col-md-4">
                       <div class="guide-item">
-                        <p class="mobile-p"  style="font-weight:bold;">Our Founder</p>
+                        <p class="mobile-p"  style="font-weight:bold;">Our Instructor</p>
                         <div class="guide-description">
-                          At age 10, Andy was required to see a therapist regularly due to family circumstances. The visits became a dreaded chore, and he struggled for years to relate before finally being let off the hook. He had no idea at the time that it was possible to shop around to find the right fit, and he didn't have many alternative options available to grapple with his mental health.<br><br>
+                          Andy became hooked on chess as a high school freshman, and his love for the game only continues to grow. He is excited to share his passion and experience with students and adults of all ages, backgrounds, and skill levels!<br><br>
 
-                          When Andy went to college, he saw a similar gap between the needs of students and the options available on campus. With some friends, he created <a href="https://lean0n.me/" target="_blank">Lean On Me</a>, which offers a text-based support service very similar to Empatext. It started as a student group, but the idea quickly spread to other campuses. Now, Lean On Me is a national nonprofit which has trained and served hundreds of supporters and students across the country.<br><br>
+                          Andy has created and led chess clubs and classes at the Avalon Public Library, e3 Civic High, and MIT, where he earned his bachelor's in mathematics with computer science after 3 years of classes. He is recognized as an expert player by the United States Chess Federation (with a rating of 2089) and can play a full game completely blindfolded.
 
-                          Andy is extremely thankful to his family, friends, and mentors for their support and guidance through the years. He considers himself lucky to have work experience in food service, retail, government, banking, academia, software, aerospace engineering, education, and venture capital. In every field and relationship, he has found the common thread of communication tying together the human experience. He is very excited for the opportunity to work directly with conversation, this most powerful medium, tool, and technology, in crafting the future of Empatext.<br><br>
-
-                          Andy earned a bachelor's in mathematics with computer science from MIT after three years of classes. He is an avid chess player who enjoys consuming books and empanadas. He is currently based in San Diego.
                             <br><br><br>
                             <div class="headshot-div">
-                              <img class="mobile-headshot" src="/img/headshot.png"/>
+                              <img class="mobile-headshot"/>
                             </div>
                             </div>
                       </div>
                   </div>
                   <div class="col-md-4">
                       <div class="guide-item">
-                        <p class="mobile-p"  style="font-weight:bold;">Our Empatexters</p>
+                        <p class="mobile-p"  style="font-weight:bold;">Our Programs</p>
                         <div class="guide-description">
-                          Empatext is a made-up word combining "empa" from <a href="https://youtu.be/1Evwgu369Jw?t=8s" target="_blank">empathy</a>&mdash;the ability to understand and share the feelings of another&mdash;and "text" from text message. <br><br>
+                          We are just getting started! The classes are the tip of the iceberg. We want to create a thriving chess community on Bainbridge. Seattle has strongest scholastic chess in the country. Adults in surrounding areas. Blah.
 
-                          An Empatexter is someone we have trained (using <a href="https://www.youtube.com/watch?v=66qQRMfW1Xg" target="_blank">core ideas</a> from Lean On Me and other established services) to have a deep, meaningful, emotionally supportive conversation with you. We believe that anybody can learn the skills we teach, but just to be sure, we only allow the most exceptionally empathetic people to become Empatexters. <br><br>
+                          To stay tuned for more updates, sign up for our email list below! Once we get set up, we'll do our best to publish a bi-weekly newsletter containing local events and updates.
 
-                          When your partner, friend, or family member is going through a rough time, what do you do? You might ask them what's going on and how you can help, but you probably don't throw your hands up and say, "sorry, we can't talk because I'm not a licensed psychiatrist." We don't require a professional counseling license or any other certification because we have learned from suicide helplines like <a href="ttps://samaritanshope.org/" target="_blank">Samaritans</a> how nonprofessional volunteers can learn to tackle some of the toughest conversations possible. <br><br>
-
-                          We know that our Empatexters can handle a wide variety of conversations, but they can't handle everything. We aren't trying to replace any existing services, just to provide another option. If the conversation indicates medical or emergency services are better suited to your needs, we will stay present with you and carry on as supportive a conversation as possible, but we will always recommend seeking professional help elsewhere as a potentially better option. <br><br>
-
-                          It is up to each Empatexter whether or not to reveal their identity during conversation with you, just as it is up to you whether or not you use your real name. If you are interested in becoming an Empatexter, please contact us using the email provided below!
                         </div>
                       </div>
                   </div>
+                </div>
+                <div class="row guide-row">
 
-              </div>
+                  <a class="btn btn-default page-scroll btnonlight" href="#find-hotline" role="button">Find your hotline</a>
+
+                </div>
             </div>
         </div>
     </section>
 
-    </body>
+
+  </body>
 </html>
