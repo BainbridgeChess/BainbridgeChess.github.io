@@ -316,7 +316,7 @@ image-rendering: crisp-edges;
     transition: all .7s ease-in-out;
   }
   .mobile-headshot:hover {
-    background: url(https://bainbridgechess.org/img/headshot-blindfolded.png) no-repeat;
+    background: url(https://bainbridgechess.org/img/headshot-blind.png) no-repeat;
   }
 
   .landing-phone{
