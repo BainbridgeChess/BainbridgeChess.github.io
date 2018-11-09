@@ -45,7 +45,7 @@ image-rendering: crisp-edges;
     }
     .salmon-bg a:hover,
     .salmon-bg a:active {
-      color: #CC0000 !important;
+      color: #CC0000;
     }
 
 
@@ -71,12 +71,13 @@ image-rendering: crisp-edges;
 
   .white-bg a:visited,
   .white-bg a:link {
-    color: #FF6A6A;
+    color: #CC0000;
     text-decoration: underline;
   }
   .white-bg a:hover,
   .white-bg a:active {
-    color: #CC0000 !important;
+    color: #FF6A6A !important;
+    text-decoration: none;
   }
   .light {
     color: #FF8c8c;
@@ -126,12 +127,14 @@ image-rendering: crisp-edges;
 
 
   a.btn.btn-default {
-    border: 1px solid #FFAAAA;
-    color: #FFAAAA;
     background-color: transparent;
     text-decoration: none;
     border-radius: 0;
     font-size: 24px;
+  }
+
+  a.btn.btn-default:hover {
+    border-radius: 25px;
   }
 
   a.btnonlight{
@@ -144,16 +147,13 @@ image-rendering: crisp-edges;
     color: #CC0000 !important;
   }
   a.btnondark{
-    border: 1px solid #FFFFFF !important;
-    color: #FFFFFF !important;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
   }
   a.btnondark:hover{
-    border: 1px solid #FF6A6A !important;
-    color: #CC0000 !important;
-  }
-
-  a.btn.btn-default:hover {
-    border: 1px solid transparent !important;
+    border: 1px solid #FFFFFF;
+    color: #CC0000;
+    background-color: #FFFFFF;
   }
 
 /* Logo */
@@ -309,23 +309,15 @@ image-rendering: crisp-edges;
     height:200px !important;
     margin:auto;
     display:block;
-    background: url(https://bainbridgechess.org/img/headshot.png) no-repeat;
-    -webkit-transition: all .7s ease-in-out;
-    -moz-transition: all .7s ease-in-out;
-    -o-transition: all .7s ease-in-out;
-    transition: all .7s ease-in-out;
-  }
-  .mobile-headshot:hover {
-    background: url(https://bainbridgechess.org/img/headshot-blind.png) no-repeat;
   }
 
   .landing-phone{
-    padding-top: 20px;
-    font-size: 52px;
+    text-decoration: none !important;
   }
 
   .landing-phone:hover{
-    font-size: 64px;
+    text-decoration: underline !important;
+    color: white !important;
   }
 
   .guide-description {
