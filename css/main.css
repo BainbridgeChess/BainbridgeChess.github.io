@@ -70,8 +70,8 @@ image-rendering: crisp-edges;
 
   .white-bg a:visited,
   .white-bg a:link {
-    color: #CC0000;
     text-decoration: underline;
+    color: inherit;
   }
   .white-bg a:hover,
   .white-bg a:active {
@@ -136,6 +136,15 @@ image-rendering: crisp-edges;
     border-radius: 25px;
   }
 
+  a.btn.btn-default:active:hover {
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 0;
+    font-size: 24px;
+    color: inherit;
+    border-color: inherit;
+  }
+
   a.btnonlight{
     border: 1px solid #FF6a6a !important;
     color: #FF6a6a !important;
@@ -146,6 +155,10 @@ image-rendering: crisp-edges;
     color: #CC0000 !important;
   }
   a.btnondark{
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+  }
+  .btnondark.selected{
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
   }
@@ -250,11 +263,21 @@ image-rendering: crisp-edges;
   p.mobile-contact {
     font-size: 24px;
   }
+  .visible-phone {
+    display: none;
+  }
 
   @media (max-width: 1199px) {
 
   }
   @media (max-width: 767px) {
+    .hidden-phone {
+      display: none;
+    }
+    .visible-phone {
+      display: inline;
+    }
+
     h2 {
       font-size: 28px;
     }
@@ -269,6 +292,7 @@ image-rendering: crisp-edges;
     img.empa-logo-nav {
         height: 40px;
         margin-top: -1px;
+        padding-left: 20px;
     }
     .title-text {
       padding-top: 85px;
@@ -279,6 +303,7 @@ image-rendering: crisp-edges;
       padding-left: 20px;
       padding-right: 20px;
       padding-bottom: 25px !important;
+      overflow: scroll;
     }
     .mobile-p {
       font-size: 38px !important;
@@ -326,6 +351,10 @@ image-rendering: crisp-edges;
     font-size: 18px;
   }
 
+  .contact-text a {
+    font-size: 28px;
+    text-decoration: none;
+  }
 
 /* team Section*/
   .team {
@@ -586,3 +615,138 @@ image-rendering: crisp-edges;
   .extra-links {
     color: #b7b7b7 !important;
   }
+
+  .extra-links a {
+    color: #b7b7b7 !important;
+  }
+
+:root {
+  --subscribe-border: #CC0000;
+  --subscribe-highlight: white;
+  --subscribe-dark: #CC0000;
+}
+
+#mc_embed_signup.validate {
+  padding: 0 0 0 0;
+}
+
+#mc_embed_signup {
+    background: white;
+    clear: left;
+    font-size: 14px;
+    width: 100%;
+}
+
+#mc_embed_signup form {
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+div.mc-field-group {
+  padding-bottom: 10px;
+}
+
+#mc_embed_signup input.email {
+  font-size: 18px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #cc0000;
+  background-color: white;
+  box-sizing: border-box;
+  height: 50px;
+  padding: 0px 0.4em;
+  display: inline-block;
+  margin: 0;
+  width: 80%;
+  vertical-align: top;
+  box-shadow: 0;
+  outline: none;
+  border: 2px solid var(--subscribe-border);
+  transition: all 0.23s ease-in-out 0s;
+}
+
+#mc_embed_signup input.email:focus {
+  border: 2px solid #cc0000;
+  font-size: 24px;
+}
+
+#mc_embed_signup input.email::placeholder {
+  color: var(--subscribe-dark);
+}
+
+#mc_embed_signup .button {
+  font-size: 20px;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  border-radius: 17px;
+  letter-spacing: .03em;
+  color: var(--subscribe-highlight);
+  background-color: var(--subscribe-dark);
+  box-sizing: border-box;
+  height: 45px;
+  line-height: 32px;
+  padding: 0 18px;
+  display: inline-block;
+  margin: 0;
+  transition: all 0.23s ease-in-out 0s;
+  border: 0;
+  outline: none;
+}
+
+#mc_embed_signup .button:hover {
+  background-color: #ff6a6a;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  height: 50px;
+}
+
+
+.subscribe-thanks-wrapper {
+  position:fixed;
+  padding:0;
+  margin:0 auto;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.subscribe-thanks-wrapper a {
+  color: #cc0000;
+}
+
+.subscribe-thanks-big {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding-top: 200px;
+  font-size: 36px;
+}
+
+.subscribe-thanks-med {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  font-size: 28px;
+}
+
+.subscribe-thanks-small {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  font-size: 22px;
+}
+
+.subscribe-thanks-tiny {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+  font-size: 16px;
+}
