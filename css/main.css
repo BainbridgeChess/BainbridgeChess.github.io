@@ -315,8 +315,8 @@ image-rendering: crisp-edges;
       padding-bottom: 30px;
     }
     .mobile-headshot {
-      width: 300px !important;
-      height: 300px !important;
+      width: 200px !important;
+      height: 200px !important;
     }
     p.mobile-legal {
       font-size: 34px !important;
@@ -330,8 +330,8 @@ image-rendering: crisp-edges;
   }
 
   .mobile-headshot {
-    width:200px !important;
-    height:200px !important;
+    width:130px !important;
+    height:130px !important;
     margin:auto;
     display:block;
   }
